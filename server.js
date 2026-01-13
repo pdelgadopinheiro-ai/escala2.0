@@ -2,7 +2,7 @@ const express = require('express');
 const sqlite3 = require('sqlite3').verbose();
 const bcrypt = require('bcrypt');
 const cors = require('cors');
-const port = process.env.PORT || 4000 
+const port = process.env.PORT || 3000 
 
 const app = express();
 app.use(express.json());
@@ -121,4 +121,5 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`);
 });
+
 
